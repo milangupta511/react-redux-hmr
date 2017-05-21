@@ -47,4 +47,10 @@
 	&.active{
 		background:white;
 	}
+	cursor: pointer;
+}
+.left-slider-container{
+	position:absolute;
+	left:0;
+	display:inline-block;
 }

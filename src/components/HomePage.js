@@ -18,7 +18,10 @@ class HomePage extends React.Component {
   	const setting={
   		width:500,
   		height:300,
-  		autoplay: true
+      autoplay: true,
+      transitionDelay: 2000,
+      direction:"right",
+      startIndex:1
   	}
     let imageArr=[img1, img2,img3,img4,img5,img6,img7];
     this.props.setImages(imageArr);
