@@ -52,11 +52,11 @@ class SliderButtons extends Component{
     );
   }
   componentDidMount(){
+    this.props.changeCurrentIndex(this.startIndex);
   	if(this.autoplay){
       let magnitude = this.direction === "left"? -1: 1;
   		setInterval(()=> {this.handleChangeIndex(magnitude)}, this.transitionDelay);
   	}
-    this.props.changeCurrentIndex(this.startIndex);
   }
 }
 const mapStateToProps = ({currentIndex,isSlideChanging}) =>{

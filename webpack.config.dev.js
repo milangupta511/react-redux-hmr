@@ -8,7 +8,7 @@ export default {
   entry: [
     'eventsource-polyfill', // necessary for hot reloading with IE
     'webpack-hot-middleware/client?reload=true', //note that it reloads the page if hot module reloading fails.
-    path.resolve(__dirname, 'src/index') //acutal entry point is always passed last
+    path.resolve(__dirname, 'src/index') //actual entry point is always passed last
   ],
   target: 'web', //can also be set as node, so that node can work on it. using web, it bundles in such a way that web browser can understand it
   output: {
